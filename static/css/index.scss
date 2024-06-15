@@ -1,0 +1,150 @@
+img {
+    overflow: hidden;
+}
+
+.carousel-content {
+    position: absolute;
+    z-index: 20;
+    color: white;
+    font-size: 56px;
+    left: 12.5%;
+    top: 20%;
+}
+
+/* General CSS */
+
+.content-split {
+    background-color: #3E3128;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 36px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.content-parent {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.content-passage {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    word-wrap: break-word;
+    width: 40%;
+    color: white;
+    font-size: 24px;
+}
+
+.base-button {
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+    font-size: 14;
+}
+
+.base-button:hover {
+    background-color: #d9d9d9c2;
+}
+
+/* CSS related to the expeditions section */
+
+.expeditions-img {
+    background-image: url("../img/expeditions.png");
+    min-height: 750px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.expeditions-button {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+}
+
+.expeditions {
+    text-shadow: 0 0 2px #000;
+}
+
+/* CSS related to the operations section */
+
+.operations-img {
+    background-image: url("../img/operations.png");
+    min-height: 750px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.operations-button {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+}
+
+/* CSS related to the projects section */
+
+.projects-img {
+    background-image: url("../img/projects-2.jpg");
+    min-height: 750px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects {
+    position: absolute;
+    display: grid;
+    justify-items: center;
+    grid-template: auto / auto auto auto;
+    top: 20%;
+}
+
+.project-content {
+    text-align: center;
+    word-wrap: break-word;
+    color: white;
+    font-size: 24px;
+    font-weight: 200;
+    padding: 20px;
+}
+
+.projects-button-parent {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    display: inline-block;
+}
+
+.project-button {
+    width: 100px;
+}
+
+/* CSS related to the footer */
+footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+}
+
+.footer-content {
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
