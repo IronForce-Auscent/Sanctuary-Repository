@@ -6,7 +6,7 @@ img {
   position: absolute;
   z-index: 20;
   color: white;
-  font-size: 56px;
+  font-size: 4vw;
   left: 12.5%;
   top: 20%;
 }
@@ -17,7 +17,7 @@ img {
   text-align: center;
   color: white;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 3.6vw;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -35,7 +35,7 @@ img {
   word-wrap: break-word;
   width: 40%;
   color: white;
-  font-size: 24px;
+  font-size: 2vw;
 }
 
 .base-button {
@@ -45,7 +45,7 @@ img {
   border-radius: 5px;
   background-color: #f0f0f0;
   transition: background-color 0.3s;
-  font-size: 14;
+  font-size: 1.2vw;
 }
 
 .base-button:hover {
@@ -55,7 +55,7 @@ img {
 /* CSS related to the expeditions section */
 .expeditions-img {
   background-image: url("../img/expeditions.png");
-  min-height: 750px;
+  min-height: 60vw;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,7 +75,7 @@ img {
 /* CSS related to the operations section */
 .operations-img {
   background-image: url("../img/operations.png");
-  min-height: 750px;
+  min-height: 60vw;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -110,7 +110,7 @@ img {
   text-align: center;
   word-wrap: break-word;
   color: white;
-  font-size: 24px;
+  font-size: 1.8vw;
   font-weight: 200;
   padding: 20px;
 }
@@ -142,5 +142,5 @@ footer {
 .footer-content {
   padding: 20px;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.9vw;
 }/*# sourceMappingURL=index.css.map */
