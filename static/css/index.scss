@@ -2,6 +2,10 @@ img {
     overflow: hidden;
 }
 
+/* Carousel CSS */
+
+
+
 .carousel-content {
     position: absolute;
     z-index: 20;
@@ -27,6 +31,7 @@ img {
     position: relative;
     padding: 0;
     margin: 0;
+    overflow: visible;
 }
 
 .content-passage {
@@ -36,7 +41,7 @@ img {
     word-wrap: break-word;
     width: 40%;
     color: white;
-    font-size: 2vw;
+    font-size: 1.7vw;
 }
 
 .base-button {
@@ -57,7 +62,7 @@ img {
 
 .expeditions-img {
     background-image: url("../img/expeditions.png");
-    min-height: 60vw;
+    min-height: 750px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -70,15 +75,11 @@ img {
     left: 10%;
 }
 
-.expeditions {
-    text-shadow: 0 0 2px #000;
-}
-
 /* CSS related to the operations section */
 
 .operations-img {
     background-image: url("../img/operations.png");
-    min-height: 60vw;
+    min-height: 750px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -103,19 +104,12 @@ img {
 
 .projects {
     position: absolute;
-    display: grid;
     justify-items: center;
-    grid-template: auto / auto auto auto;
     top: 20%;
 }
 
 .project-content {
-    text-align: center;
-    word-wrap: break-word;
     color: white;
-    font-size: 1.8vw;
-    font-weight: 200;
-    padding: 20px;
 }
 
 .projects-button-parent {
@@ -145,5 +139,5 @@ footer {
 .footer-content {
     padding: 20px;
     text-align: center;
-    font-size: 0.9vw;
+    font-size: 1.1vw;
 }
