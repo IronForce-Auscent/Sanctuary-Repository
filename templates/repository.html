@@ -4,5 +4,21 @@
 {% endblock %}
 
 {% block content %}
-<h1>Placeholder repository</h1>
+<div class="header">
+    <div class="header-img parallax-img"></div>
+</div>
+
+<div class="container">
+    <h3 class="search-header">
+        Northland Repository
+    </h3>
+    <div class="search-form">
+        <form action="repository.html" method="get" class="form-floating">
+            <div class="mb-3 text-center">
+                <input type="text" class="form-control" id="floatingInput" name="query" placeholder="Insert your query here">
+            </div>
+            <button class="btn btn-primary" type="submit" value="query">Search</button>
+        </form>
+    </div>
+</div>
 {% endblock %}

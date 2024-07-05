@@ -1,7 +1,9 @@
+from datetime import datetime
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from jinja2 import exceptions
 import argparse
 import os
+
 
 """
 Utility script to render HTML files using Jinja2 templates.
@@ -27,13 +29,14 @@ def build(file: list):
             with open(file, "w") as f:
                 f.write(template.render())
         except exceptions.TemplateNotFound as TemplateNotFound:
-            print(f"Error: HTML file \'{file}\' not found. Continuing to render other files...")
+            timenow = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            print(f"{timenow} - HTML file \'{file}\' not found.")
             err_files.append(file)
             continue
-    if len(err_files) <= 0:
-        print(f"The following files were successfully rendered: {files}")
-    else:
-        print(f"The following files were not found/were not able to be rendered: {err_files}")
+    timenow = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"{timenow} - Files rendered: {files}")
+    if len(err_files) > 0:
+        print(f"{timenow} - Could not render some files {err_files}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Render HTML files using Jinja2 templates.")
