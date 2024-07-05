@@ -45,7 +45,6 @@ img {
   cursor: pointer;
   padding: 5px 10px;
   border-radius: 5px;
-  background-color: #f0f0f0;
   transition: background-color 0.3s;
   font-size: 1.2vw;
 }
@@ -66,8 +65,8 @@ img {
 
 .expeditions-button {
   position: absolute;
-  top: 65%;
   left: 10%;
+  margin-top: 50px;
 }
 
 /* CSS related to the operations section */
@@ -82,8 +81,8 @@ img {
 
 .operations-button {
   position: absolute;
-  top: 65%;
   left: 10%;
+  margin-top: 50px;
 }
 
 /* CSS related to the projects section */
