@@ -4,8 +4,6 @@ img {
 
 /* Carousel CSS */
 
-
-
 .carousel-content {
     position: absolute;
     z-index: 20;
@@ -13,6 +11,12 @@ img {
     font-size: 4vw;
     left: 12.5%;
     top: 20%;
+}
+
+.landing-slide {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 /* General CSS */
@@ -39,7 +43,7 @@ img {
     top: 20%;
     left: 10%;
     word-wrap: break-word;
-    width: 40%;
+    width: 50%;
     color: white;
     font-size: 1.7vw;
 }
