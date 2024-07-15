@@ -10,6 +10,7 @@
 
     
 <link rel="stylesheet" href="static/css/projects.css">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
     <link href="static/css/base.css" rel="stylesheet">
     
@@ -17,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img class="navbar-insignia" width="50" height="50" src="static/img/insignia.png"
@@ -32,7 +33,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="search.html">Repository</a>
@@ -45,10 +46,89 @@
 <div class="header">
     <div class="header-img parallax-img"></div>
 </div>
+<section class="header-breaker text-center">
+    <p class="fs-1 fw-semibold projects-header">Project Registry</p>
+</section>
+<section>
+    <div class="container">
+        <div class="projects-table table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Project Title</th>
+                        <th>Lead Researcher</th>
+                        <th>Division-In-Charge</th>
+                        <th>Summary</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>FTL Travel - Development</td>
+                        <td>Dossoles Hunter</td>
+                        <td>RD-074 "FTL Speedsters"</td>
+                        <td>Development of faster-than-light (FTL) warp and sub-lightspeed engines</td>
+                        <td>
+                            <span class="material-symbols-outlined checkmark">
+                                task_alt
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Black Hole Energy Manipulation - Development</td>
+                        <td>Paxte Eriker</td>
+                        <td>DIV-003 "Engineering Division"</td>
+                        <td>Manipulation of black hole physics to produce massive quantities of energy</td>
+                        <td>
+                            <span class="material-symbols-outlined">
+                                pending
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Astral Network - Deployment</td>
+                        <td>Kronos Falx</td>
+                        <td>RD-012 "The Trailblazers"</td>
+                        <td>Deployment of interstellar travel routes ("Astral Network") between systems and galaxies
+                        </td>
+                        <td>
+                            <span class="material-symbols-outlined checkmark">
+                                task_alt
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hyper-Advanced Automated Intrusion Detection System (IDS) - Development</td>
+                        <td>Ryo Soikutsu | Aura</td>
+                        <td>DIV-006 "Cybersecurity Division" | DIV-001 "Divine Committee"</td>
+                        <td>Development of automated IDS for protection of Foundation networks</td>
+                        <td>
+                            <span class="material-symbols-outlined">
+                                pending
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Veil Network - Deployment</td>
+                        <td>Okeen Hoake</td>
+                        <td>RD-054 "Veil Sorcerers"</td>
+                        <td>Deployment of Veil Network stations and probes in deep space and wormholes</td>
+                        <td>
+                            <span class="material-symbols-outlined checkmark">
+                                task_alt
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</section>
 
 
     
-
+<script src="static/js/projects.js"></script>
 
 </body>
 
