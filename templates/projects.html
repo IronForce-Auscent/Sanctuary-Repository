@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<link rel="stylesheet" href="static/css/projects.css">
+<link rel="stylesheet" href="{{ url_for('static', filename="/css/projects.css") }}">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 {% endblock %}
 
@@ -62,7 +62,7 @@
                     </tr>
                     <tr>
                         <td>Hyper-Advanced Automated Intrusion Detection System (IDS) - Development</td>
-                        <td>Ryo Soikutsu | Aura</td>
+                        <td>Ryo Soikutsu | "Aura"</td>
                         <td>DIV-006 "Cybersecurity Division" | DIV-001 "Divine Committee"</td>
                         <td>Development of automated IDS for protection of Foundation networks</td>
                         <td>

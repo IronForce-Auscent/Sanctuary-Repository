@@ -7,7 +7,6 @@ img {
   position: absolute;
   z-index: 20;
   color: white;
-  font-size: 4vw;
   left: 12.5%;
   top: 20%;
 }
@@ -45,8 +44,8 @@ img {
   left: 10%;
   word-wrap: break-word;
   width: 50%;
+  min-width: 300px;
   color: white;
-  font-size: 1.7vw;
 }
 
 .base-button {
@@ -143,5 +142,5 @@ footer {
 .footer-content {
   padding: 20px;
   text-align: center;
-  font-size: 1.1vw;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=index.css.map */
