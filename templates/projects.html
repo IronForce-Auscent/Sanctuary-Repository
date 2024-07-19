@@ -1,21 +1,19 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename="/css/projects.css") }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/projects.css') }}">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 {% endblock %}
 
+{% block title %}Projects{% endblock %}
+
+
 {% block content %}
-<div class="header">
-    <div class="header-img parallax-img"></div>
-</div>
-<section class="header-breaker text-center">
-    <p class="fs-1 fw-semibold projects-header">Project Registry</p>
-</section>
-<section>
-    <div class="container">
-        <div class="projects-table table-responsive">
-            <table class="table table-hover">
+<div class="parallax-bg">
+    <div class="content">
+        <p class="text-center fs-2 fw-semibold">Project Registry</p>
+        <div class="table-responsive projects-table">
+            <table class="table">
                 <thead>
                     <tr>
                         <th>Project Title</th>
@@ -85,11 +83,10 @@
                 </tbody>
             </table>
         </div>
-
     </div>
-</section>
+</div>
 {% endblock %}
 
-{% block script %}
-<script src="static/js/parallax.js"></script>
+
+{% block scripts %}
 {% endblock %}

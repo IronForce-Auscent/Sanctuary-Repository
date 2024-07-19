@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename="/css/test.css") }}">
+{% endblock %}
+
+{% block content %}
+<h1>Hello World</h1>
+
+<section class="hidden">
+    <h2>Lorem 1</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil praesentium aspernatur architecto ex eveniet quidem, sed, vel id eos consectetur expedita facilis facere obcaecati ipsam quod nulla iure accusantium voluptatum?
+    Iure in fuga, alias consectetur, sed nisi ipsam commodi et beatae placeat ipsa adipisci, doloribus sint maxime eius vitae? Maiores necessitatibus provident repellendus accusantium, distinctio quaerat porro in doloremque minus!
+    Ipsa aut fugiat hic exercitationem nisi nam asperiores eveniet tenetur corrupti nostrum! Doloremque impedit quam, quibusdam, suscipit ea error, nobis architecto voluptas pariatur totam reiciendis ipsam rem excepturi aperiam modi?</p>
+</section>
+
+<section class="hidden">
+    <h3>Lorem 2</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe officiis iusto reprehenderit repellendus velit assumenda animi sequi consequuntur molestiae minima dolorem numquam ea ex natus reiciendis esse, nisi est eaque.
+    Impedit sit veniam dolores. Labore, sit? Commodi culpa iure, labore eveniet, est quibusdam accusantium magni pariatur eaque doloremque, at cupiditate velit repudiandae facere exercitationem. Qui laborum consectetur neque quos voluptatum.
+    Labore mollitia facere, iure dicta nisi accusantium totam, cupiditate laborum laudantium voluptas numquam dolores voluptatem impedit accusamus a ipsam asperiores adipisci exercitationem doloribus! Exercitationem, eveniet consectetur? Nesciunt fuga deserunt distinctio!</p>
+</section>
+
+<section class="hidden">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo repellendus asperiores aperiam esse commodi qui! Consequatur numquam, officiis est quisquam doloribus iure praesentium impedit placeat delectus tempore officia suscipit ut?</p>
+    <div class="images">
+        <div class="image hidden">
+            <img src="{{ url_for('static', filename='/img/landing-1.png') }}" alt="">
+        </div>
+        <div class="image hidden">
+            <img src="{{ url_for('static', filename='/img/landing-2.png') }}" alt="">
+        </div>
+        <div class="image hidden">
+            <img src="{{ url_for('static', filename='/img/landing-3.png') }}" alt="">
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block script %}
+<script src="{{ url_for('static', filename="/js/test.js") }}"></script>
+{% endblock %}

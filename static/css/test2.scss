@@ -4,10 +4,9 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
-    overflow: hidden;
 }
 
-.parallax-bg {
+.parallax-background {
     background-image: url('../img/projects.png'); /* Replace with your background image URL */
     background-attachment: fixed;
     background-size: cover;
@@ -30,6 +29,10 @@ table {
     border-collapse: collapse;
 }
 
+table, th, td {
+    border: 1px solid #ddd;
+}
+
 th, td {
     padding: 12px;
     text-align: left;
@@ -37,8 +40,4 @@ th, td {
 
 th {
     background-color: #f2f2f2;
-}
-
-.checkmark {
-    color: green;
 }

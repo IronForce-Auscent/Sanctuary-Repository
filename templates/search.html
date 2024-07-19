@@ -3,6 +3,8 @@
 <link rel="stylesheet" href="{{ url_for('static', filename="/css/search.css") }}">
 {% endblock %}
 
+{% block title %}Repository{% endblock %}
+
 {% block content %}
 <div class="header">
     <div class="header-img parallax-img"></div>
@@ -13,14 +15,16 @@
         Northland Repository
     </p>
     <div class="search-form">
-        <div action="search.html" method="post" class="form-floating">
+        <form action="{{ url_for('search') }}" method="post" class="form-floating">
             <div class="mb-3 text-center">
                 <input type="text" class="form-control" id="query-input" name="query" placeholder="Insert your query here">
             </div>
-            <button onclick="search()" class="btn btn-primary m-0 btn-block mx-4">Search</button>
-        </div>
+            <button class="btn btn-primary m-0 btn-block mx-4">Search</button>
+        </form>
     </div>
-    <div id="search-results" class="text-center fs-5 fw-semibold "></div>
+    <div id="search-results" class="text-center fs-5 fw-semibold ">
+        {{ response }}
+    </div>
 </div>
 
 {% endblock %}

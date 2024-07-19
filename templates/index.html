@@ -3,6 +3,8 @@
 <link rel="stylesheet" href="{{ url_for('static', filename="/css/index.css") }}">
 {% endblock %}
 
+{% block title %}Sanctuary{% endblock %}
+
 {% block content %}
 <section>
 <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
@@ -104,4 +106,8 @@
     </div>
 
 </footer>
+{% endblock %}
+
+{% block script %}
+
 {% endblock %}
