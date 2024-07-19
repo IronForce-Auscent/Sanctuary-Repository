@@ -1,32 +1,60 @@
 {% extends 'base.html' %}
 {% block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename="/css/search.css") }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/search.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 {% endblock %}
 
 {% block title %}Repository{% endblock %}
 
 {% block content %}
-<div class="header">
-    <div class="header-img parallax-img"></div>
-</div>
-
-<div class="container">
-    <p class="fs-2 fw-semibold search-header">
-        Northland Repository
-    </p>
-    <div class="search-form">
-        <form action="{{ url_for('search') }}" method="post" class="form-floating">
-            <div class="mb-3 text-center">
-                <input type="text" class="form-control" id="query-input" name="query" placeholder="Insert your query here">
+<div class="parallax-bg">
+    <div class="container text-center">
+        <div class="row align-items-start">
+            <div class="col">
+                <p class="fs-2 fw-semibold search-header">
+                    Northland Repository
+                </p>
+                <div class="search-form">
+                    <form action="{{ url_for('search') }}" method="post">
+                        <div class="mb-3 text-center">
+                            <input type="text" class="form-control" id="query-input" name="query"
+                                placeholder="Insert your query here">
+                        </div>
+                        <button class="btn btn-primary m-0 btn-block mx-4">Search</button>
+                    </form>
+                </div>
+                <div id="search-results" class="text-center">
+                    <div class="internal">
+                        {% if response %}
+                            {% for report_name, details in response.items() %}
+                                <div class="result text-center">
+                                    <span class="result-title">{{ report_name }}</span>
+                                    <div class="icons">
+                                        <span class="material-symbols-outlined">
+                                            description
+                                        </span>
+                                        <span class="material-symbols-outlined checkmark">
+                                            {% if details[1] == "Completed" %}
+                                                task_alt
+                                            {% elif details[1] == "In Progress" %}
+                                                hourglass_empty
+                                            {% else %}
+                                                hourglass_disabled
+                                            {% endif %}
+                                        </span>
+                                        <span class="material-symbols-outlined">
+                                            open_in_new
+                                        </span>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
             </div>
-            <button class="btn btn-primary m-0 btn-block mx-4">Search</button>
-        </form>
-    </div>
-    <div id="search-results" class="text-center fs-5 fw-semibold ">
-        {{ response }}
+        </div>
     </div>
 </div>
-
 {% endblock %}
 
 {% block script %}
