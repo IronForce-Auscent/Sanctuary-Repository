@@ -8,8 +8,6 @@ app = Flask(__name__)
 
 def connect_db(db_url): 
     return sqlite3.connect(db_url)
-    
-    return sanitized_query
 
 def parse_query(query: str):
     # Compiles a set of expressions to be matched to
@@ -58,7 +56,7 @@ def projects():
 def search():
     if request.method == "POST":
         search = request.form["query"]
-        query_response = parse_query(search)
+        query_response = parse_query(search.strip())
         response = {}
         for entry in query_response:
             name, description, status = entry
