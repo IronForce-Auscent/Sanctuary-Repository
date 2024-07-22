@@ -26,28 +26,39 @@
                 <div id="search-results" class="text-center">
                     <div class="internal">
                         {% if response %}
-                            {% for report_name, details in response.items() %}
-                                <div class="result text-center">
-                                    <span class="result-title">{{ report_name }}</span>
-                                    <div class="icons">
-                                        <span class="material-symbols-outlined">
-                                            description
-                                        </span>
-                                        <span class="material-symbols-outlined checkmark">
-                                            {% if details[1] == "Completed" %}
-                                                task_alt
-                                            {% elif details[1] == "In Progress" %}
-                                                hourglass_empty
-                                            {% else %}
-                                                hourglass_disabled
-                                            {% endif %}
-                                        </span>
-                                        <span class="material-symbols-outlined">
-                                            open_in_new
-                                        </span>
-                                    </div>
-                                </div>
-                            {% endfor %}
+                        {% if response[0] == "no results found" %}
+                        <div class="result text-center">
+                            <span class="result-title">No results found for "{{ response[1] }}".</span>
+                        </div>
+                        {% elif response[0] == "empty search query" %}
+                        <div class="result text-center">
+                            <span class="result-title">Please insert a search query</span>
+                        </div>
+                        {% else %}
+                        {% for report_name, details in response.items() %}
+                        <div class="result text-center">
+                            <span class="result-title">{{ report_name }}</span>
+                            <div class="icons">
+                                <span class="material-symbols-outlined">
+                                    description
+                                </span>
+                                <span class="material-symbols-outlined checkmark">
+                                    {% if details[1] == "Completed" %}
+                                    task_alt
+                                    {% elif details[1] == "In Progress" %}
+                                    hourglass_empty
+                                    {% else %}
+                                    hourglass_disabled
+                                    {% endif %}
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    open_in_new
+                                </span>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+                        {% endif %}
                         {% endif %}
                     </div>
                 </div>

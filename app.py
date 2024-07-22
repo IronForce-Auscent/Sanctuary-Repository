@@ -56,12 +56,14 @@ def projects():
 def search():
     if request.method == "POST":
         search = request.form["query"]
+        if search == "":
+            return render_template("search.html", response=["empty search query"])
         query_response = parse_query(search.strip())
         response = {}
         for entry in query_response:
             name, description, status = entry
             response[name] = [description, status]
-        return render_template("search.html", response=response)
+        return render_template("search.html", response=response if response else ["no results found", search])
     return render_template("search.html")
 
 @app.route("/test")
