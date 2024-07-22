@@ -1,3 +1,9 @@
+body {
+    /* background-image: url("../img/test-bodybg.png");
+    background-repeat: repeat; */
+    background-color: #000;
+}
+
 img {
     overflow: hidden;
 }
@@ -66,12 +72,12 @@ img {
 /* CSS related to the expeditions section */
 
 .expeditions-img {
-    background-image: url("../img/expeditions.png");
-    min-height: 750px;
+    background-image: url("../img/expeditions.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 650px;
 }
 
 .expeditions-button {
@@ -83,12 +89,12 @@ img {
 /* CSS related to the operations section */
 
 .operations-img {
-    background-image: url("../img/operations.png");
-    min-height: 750px;
+    background-image: url("../img/operations.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 650px;
 }
 
 .operations-button {
@@ -100,11 +106,11 @@ img {
 /* CSS related to the projects section */
 .projects-img {
     background-image: url("../img/projects-2.jpg");
-    min-height: 750px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 650px;
 }
 
 .projects {
@@ -147,4 +153,29 @@ footer {
     padding: 20px;
     text-align: center;
     font-size: 0.8rem;
+}
+
+/* Test CSS with scrolling animation */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hidden-bg {
+    opacity: 0;
+    filter: blur(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.show-bg {
+    opacity: 1;
+    filter: blur(5px);
 }

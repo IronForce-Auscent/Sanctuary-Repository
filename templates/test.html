@@ -1,40 +1,107 @@
 {% extends 'base.html' %}
-
 {% block head %}
 <link rel="stylesheet" href="{{ url_for('static', filename="/css/test.css") }}">
 {% endblock %}
 
+{% block title %}Sanctuary{% endblock %}
+
 {% block content %}
-<h1>Hello World</h1>
-
-<section class="hidden">
-    <h2>Lorem 1</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil praesentium aspernatur architecto ex eveniet quidem, sed, vel id eos consectetur expedita facilis facere obcaecati ipsam quod nulla iure accusantium voluptatum?
-    Iure in fuga, alias consectetur, sed nisi ipsam commodi et beatae placeat ipsa adipisci, doloribus sint maxime eius vitae? Maiores necessitatibus provident repellendus accusantium, distinctio quaerat porro in doloremque minus!
-    Ipsa aut fugiat hic exercitationem nisi nam asperiores eveniet tenetur corrupti nostrum! Doloremque impedit quam, quibusdam, suscipit ea error, nobis architecto voluptas pariatur totam reiciendis ipsam rem excepturi aperiam modi?</p>
+<section>
+<div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button data-target="#carouselMain" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button data-target="#carouselMain" data-bs-target="#carouselMain" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button data-target="#carouselMain" data-bs-target="#carouselMain" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="fs-1 carousel-content">Infinite Worlds, <br>Infinite <br>Possibilities</div>
+        <div class="carousel-item active"><img class="d-block w-100 landing-slide" src="static/img/landing-1.png"
+                alt=""></div>
+        <div class="carousel-item"><img class="d-block w-100 landing-slide" src="static/img/landing-2.png" alt=""></div>
+        <div class="carousel-item"><img class="d-block w-100 landing-slide" src="static/img/landing-3.png" alt=""></div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 </section>
-
-<section class="hidden">
-    <h3>Lorem 2</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe officiis iusto reprehenderit repellendus velit assumenda animi sequi consequuntur molestiae minima dolorem numquam ea ex natus reiciendis esse, nisi est eaque.
-    Impedit sit veniam dolores. Labore, sit? Commodi culpa iure, labore eveniet, est quibusdam accusantium magni pariatur eaque doloremque, at cupiditate velit repudiandae facere exercitationem. Qui laborum consectetur neque quos voluptatum.
-    Labore mollitia facere, iure dicta nisi accusantium totam, cupiditate laborum laudantium voluptas numquam dolores voluptatem impedit accusamus a ipsam asperiores adipisci exercitationem doloribus! Exercitationem, eveniet consectetur? Nesciunt fuga deserunt distinctio!</p>
+<section class="">
+    <div class="content-parent">
+        <div class="expeditions-img hidden-bg"></div>
+        <p class="fs-5 expeditions content-passage hidden">We launch daring research expeditions into deep and
+            wormhole space,
+            pioneering the exploration of unknown realms. From uncovering new elements to testing cutting-edge
+            technologies
+            and developing advanced subsystems, our missions push the boundaries of scientific discovery in the
+            cosmos, with
+            the goal of furthering humanity's progress
+            <a class="fs-6 btn btn-secondary rounded expeditions-button base-button">Learn More</a>
+        </p>
+    </div>
 </section>
-
-<section class="hidden">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo repellendus asperiores aperiam esse commodi qui! Consequatur numquam, officiis est quisquam doloribus iure praesentium impedit placeat delectus tempore officia suscipit ut?</p>
-    <div class="images">
-        <div class="image hidden">
-            <img src="{{ url_for('static', filename='/img/landing-1.png') }}" alt="">
-        </div>
-        <div class="image hidden">
-            <img src="{{ url_for('static', filename='/img/landing-2.png') }}" alt="">
-        </div>
-        <div class="image hidden">
-            <img src="{{ url_for('static', filename='/img/landing-3.png') }}" alt="">
+<section class="">
+    <div class="content-parent">
+        <div class="operations-img hidden-bg"></div>
+        <p class="fs-5 operations content-passage hidden">We operate state-of-the-art facilities in the Stacmon
+            system to support our
+            cutting-edge research endeavors, collaborations with governments and institutions, and occasional public
+            events,
+            providing insights into the mysteries of deep and wormhole space. We also operate freeport stations in
+            wormhole
+            and deep space to support individual and public research operations
+            <a class="fs-6 btn btn-secondary rounded operations-button base-button">Learn More</a>
+        </p>
+    </div>
+</section>
+<section class="">
+    <div class="content-parent">
+        <div class="projects-img hidden-bg"></div>
+        <div class="projects hidden">
+            <div class="row text-center">
+                <div class="col-sm-4 project-1 project-content">
+                    <p class="fs-6">
+                        The Sanctuary super-fleet, launched in colaboration with the
+                        Trans-Supercluster Research and Expeditions Committee (TSREC), spearheads Foundation operations with its
+                        flagship supercarrier and support dreadnoughts and carriers. <br>
+                        <button class="btn btn-secondary m-3 rounded">Learn More</button>
+                    </p>
+                </div>
+                <div class="col-sm-4 project-2 project-content">
+                    <p class="fs-6">
+                        The "Astral Network," the Foundation's inaugural public project,
+                        revolutionized interstellar logistics, fostering trade and tourism across systems. Its success wildly
+                        surpassed TSREC's expectations, enhancing interstellar connectivity and overall quality-of-life.
+                        <br>
+                        <button class="btn btn-secondary m-3 rounded">Learn More</button>
+                    </p>
+                </div>
+                <div class="col-sm-4 project-3 project-content">
+                    <p class="fs-6">
+                        Enhancing security in dangerous space, the Veil Network deploys advanced
+                        subspace detection probes and freeport stations in deep space and wormhole regions, ensuring swift and
+                        coordinated defensive responses against threats.
+                        <br>
+                        <button class="btn btn-secondary m-3 rounded">Learn More</button>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
+<footer>
+    <div class="container text-center footer-content">Copyright &copy; 2076 Northland Foundation. All Rights Reserved. Use of this site
+        constitutes acceptance of our organisation's Terms of Use and the Trans-Supercluster Personal Data
+        Privacy Act. No aliens, humans, or other (non-)humanoid sentinel species were harmed in the making of the
+        website or organisation.
+        <br>Actual <a href="credits.html" target="_blank">credits</a>
+    </div>
+
+</footer>
 {% endblock %}
 
 {% block script %}

@@ -30,27 +30,24 @@
     </button>
 </div>
 </section>
-<div class="content-split">What We Do</div>
-<section>
+<section class="">
     <div class="content-parent">
-        <div class="expeditions-img">
-            <p class="fs-5 expeditions content-passage">We launch daring research expeditions into deep and
-                wormhole space,
-                pioneering the exploration of unknown realms. From uncovering new elements to testing cutting-edge
-                technologies
-                and developing advanced subsystems, our missions push the boundaries of scientific discovery in the
-                cosmos, with
-                the goal of furthering humanity's progress
-                <a class="fs-6 btn btn-secondary rounded expeditions-button base-button">Learn More</a>
-            </p>
-        </div>
+        <div class="expeditions-img hidden-bg"></div>
+        <p class="fs-5 expeditions content-passage hidden">We launch daring research expeditions into deep and
+            wormhole space,
+            pioneering the exploration of unknown realms. From uncovering new elements to testing cutting-edge
+            technologies
+            and developing advanced subsystems, our missions push the boundaries of scientific discovery in the
+            cosmos, with
+            the goal of furthering humanity's progress
+            <a class="fs-6 btn btn-secondary rounded expeditions-button base-button">Learn More</a>
+        </p>
     </div>
 </section>
-<div class="content-split">Core Operations</div>
-<section>
+<section class="">
     <div class="content-parent">
-        <div class="operations-img"></div>
-        <p class="fs-5 operations content-passage">We operate state-of-the-art facilities in the Stacmon
+        <div class="operations-img hidden-bg"></div>
+        <p class="fs-5 operations content-passage hidden">We operate state-of-the-art facilities in the Stacmon
             system to support our
             cutting-edge research endeavors, collaborations with governments and institutions, and occasional public
             events,
@@ -61,11 +58,10 @@
         </p>
     </div>
 </section>
-<div class="content-split">Organisation Projects</div>
-<section>
+<section class="">
     <div class="content-parent">
-        <div class="projects-img"></div>
-        <div class="projects">
+        <div class="projects-img hidden-bg"></div>
+        <div class="projects hidden">
             <div class="row text-center">
                 <div class="col-sm-4 project-1 project-content">
                     <p class="fs-6">
@@ -109,5 +105,5 @@
 {% endblock %}
 
 {% block script %}
-
+<script src="{{ url_for('static', filename="/js/index.js") }}"></script>
 {% endblock %}
