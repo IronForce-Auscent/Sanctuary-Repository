@@ -1,8 +1,4 @@
-body {
-    /* background-image: url("../img/test-bodybg.png");
-    background-repeat: repeat; */
-    background-color: #000;
-}
+@import "../../node_modules/rfs/scss";
 
 img {
     overflow: hidden;
@@ -136,6 +132,10 @@ img {
     width: 100px;
 }
 
+.project {
+    font-weight: normal;
+}
+
 /* CSS related to the footer */
 footer {
     margin: 0;
@@ -155,7 +155,7 @@ footer {
     font-size: 0.8rem;
 }
 
-/* Test CSS with scrolling animation */
+/*  CSS for scrolling animation */
 .hidden {
     opacity: 0;
     filter: blur(5px);

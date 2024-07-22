@@ -66,15 +66,14 @@ def search():
         return render_template("search.html", response=response if response else ["no results found", search])
     return render_template("search.html")
 
-@app.route("/test")
-def test():
-    return render_template("test.html")
-
 @app.route("/credits")
 def credits():
     return render_template("credits.html")
 
 if __name__ == '__main__':
-    app.run(
-        debug=True
-    )
+    """ app.run(
+        debug=True,
+        host="0.0.0.0",
+        port=12345
+    ) """
+    app.run(debug=True)
