@@ -1,13 +1,21 @@
-Image Sources:
-    <ul>
-        <li>Kamille Panela - Discord (EVE University)</li>
-        <li>Nick Eullon - Discord (EVE University)</li>
-        <li>Sean Castellanos - Discord (EVE University)</li>
-        <li>Razorien - EVE Online Forums <a href="https://forums.eveonline.com/t/high-resolution-eve-wallpapers-in-4k/48858">Original post</a></li>
-    </ul>
+# Welcome to the Sanctuary
 
-    This material is used with limited permission of CCP Games. No official affiliation or endorsement by CCP Games is stated or implied. EVE Online © and CCP © and all related logos and other elements are trademarks of CCP ehf.
+Welcome to the Sanctuary, your one-stop repository of space- and multiversal-related research. Managed by the Northland Foundation, we ensure 100% secure access to all our resources... or at least, that was what was assumed, until a recent cyberattack on the Sanctuary caused critical information to be leaked to the public.
 
+To combat this issue, the Foundation has released an open-source version of the Sanctuary, and issued a challenge to the public.
+
+```
+Find the flags hidden within the website, and turn them in to the Foundation's Quality Assurance Division to receive bountiful rewards and recognition for your efforts!
+```
+
+## Author's Notes
+
+It is highly recommended that you go through and exploit the website yourself first, before looking through the listed flag locations and solutions. If you encounter
+issues with certain vulnerabilities, please open a pull request describing your issue and steps for reproduction.
+
+A list of flags can be found [here]() and the solutions to the flags can be found [here]()
+
+## How to run
 
 To run the project, follow these steps:
 
