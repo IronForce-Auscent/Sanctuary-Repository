@@ -1,3 +1,4 @@
+from core.config import FLAGS
 import base64
 import sqlite3
 
@@ -9,7 +10,7 @@ accounts = [
         "name": "Ryo Soikutsu",
         "description": "DCM013",
         "status": "w8BIcjkXUXnFK4ZxA1gJBaOVXQpbail6",
-        "type": "SANC{5q1_v4cCiN3_In73cTi0n}"
+        "type": FLAGS["sql"]
     },
     {
         "name": "Mikaela Katsuragi",

@@ -1,14 +1,9 @@
 from dotenv import load_dotenv
 from pathlib import Path
+from .config import DB_URL
 import sqlite3
 import re
 import os
-
-DOTENV_PATH = Path("core/config/.env")
-load_dotenv(DOTENV_PATH)
-
-DB_URL = os.getenv("DB_URL")
-print(DB_URL)
 
 def connect_db() -> sqlite3.Connection:
     return sqlite3.connect(DB_URL)
