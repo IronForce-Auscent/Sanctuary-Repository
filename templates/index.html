@@ -40,7 +40,7 @@
             and developing advanced subsystems, our missions push the boundaries of scientific discovery in the
             cosmos, with
             the goal of furthering humanity's progress
-            <a class="fs-6 btn btn-secondary rounded expeditions-button base-button">Learn More</a>
+            <button id="expeditions" class="fs-6 btn btn-secondary rounded expeditions-button base-button learn-more">Learn More</button>
         </p>
     </div>
 </section>
@@ -54,7 +54,7 @@
             providing insights into the mysteries of deep and wormhole space. We also operate freeport stations in
             wormhole
             and deep space to support individual and public research operations
-            <a class="fs-6 btn btn-secondary rounded operations-button base-button">Learn More</a>
+            <button id="operations" class="fs-6 btn btn-secondary rounded operations-button base-button learn-more">Learn More</button>
         </p>
     </div>
 </section>
@@ -67,7 +67,7 @@
                         The Sanctuary super-fleet, launched in colaboration with the
                         Trans-Supercluster Research and Expeditions Committee (TSREC), spearheads Foundation operations with its
                         flagship supercarrier and support dreadnoughts and carriers. <br>
-                        <button class="btn btn-secondary m-3 rounded">Learn More</button>
+                        <button id="proj-1" class="btn btn-secondary m-3 rounded learn-more">Learn More</button>
                     </p>
                 </div>
                 <div class="col-sm-4 project-2 project-content">
@@ -76,7 +76,7 @@
                         revolutionized interstellar logistics, fostering trade and tourism across systems. Its success wildly
                         surpassed TSREC's expectations, enhancing interstellar connectivity and overall quality-of-life.
                         <br>
-                        <button class="btn btn-secondary m-3 rounded">Learn More</button>
+                        <button id="proj-1" class="btn btn-secondary m-3 rounded learn-more">Learn More</button>
                     </p>
                 </div>
                 <div class="col-sm-4 project-3 project-content">
@@ -85,7 +85,7 @@
                         subspace detection probes and freeport stations in deep space and wormhole regions, ensuring swift and
                         coordinated defensive responses against threats.
                         <br>
-                        <button class="btn btn-secondary m-3 rounded">Learn More</button>
+                        <button id="proj-1" class="btn btn-secondary m-3 rounded learn-more">Learn More</button>
                     </p>
                 </div>
             </div>
@@ -105,4 +105,5 @@
 
 {% block script %}
 <script src="{{ url_for('static', filename="/js/index.js") }}"></script>
+<script src="{{ url_for('static', filename="/js/query.js") }}"></script>
 {% endblock %}

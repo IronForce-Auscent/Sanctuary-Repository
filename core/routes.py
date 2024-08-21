@@ -1,4 +1,7 @@
+import os
+
 from flask import *
+from jinja2 import exceptions
 
 from .data import *
 from .auth import *
@@ -13,6 +16,10 @@ app = Flask(
 @app.route("/index")
 def index():
     return render_template("index.html")
+
+@app.route("/robots.txt")
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
 
 @app.route("/projects")
 def projects():
@@ -47,3 +54,17 @@ def login():
         else:
             return render_template("login.html", response="failure")
     return render_template("login.html")
+
+@app.route("/query", methods=["GET"])
+def query():
+    if request.method == "GET":
+        page = request.args.get("page")
+        if page:
+            if ".." in page or "%2F" in page or page.startswith("/"):
+                return redirect("/")
+            try:
+                return render_template(page)
+            except exceptions.TemplateNotFound as e:
+                referrer = request.referrer
+                return redirect(referrer)
+    return redirect("/")
