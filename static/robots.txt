@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
+Disallow: /query
 Disallow: /protected/facilities/earth.html

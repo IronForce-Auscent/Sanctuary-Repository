@@ -5,6 +5,7 @@ from jinja2 import exceptions
 
 from .data import *
 from .auth import *
+from .config import FLAGS
 
 app = Flask(
     __name__, 
